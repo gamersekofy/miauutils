@@ -16,14 +16,14 @@ I also want to gain a deep, practical understanding of advanced Rust concepts, i
 
 OR
 
-- NixOS/Nix (optionally with `direnv`): If you use Nix, a flake.nix is provided to instantly set up the development environment.
+- NixOS/Nix (optionally with `direnv`): If you use Nix, a `flake.nix` is provided to instantly set up the development environment.
 
 ### Building
 
 1. Clone this repo:
 
 ```
-git clone [https://github.com/gamersekofy/miauutils.git]
+git clone https://github.com/gamersekofy/miauutils.git
 cd miauutils
 ```
 
