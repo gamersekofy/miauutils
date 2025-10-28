@@ -1,0 +1,10 @@
+[package]
+name = "uname"
+version = "0.1.0"
+edition = "2024"
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+clap.workspace = true
+miaulib = { path = "../miaulib" }

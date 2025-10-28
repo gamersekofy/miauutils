@@ -51,6 +51,7 @@ This section tracks the implementation status of each utility in the Miau Utils 
 
 | Command | Description | Status | Notes |
 | :--- | :--- | :--- | :--- |
+| `uname` | Reports system information | In-progress | Linux implementation finished |
 | `arch` | Reports machine hardware name; same as `uname -m` | Planned | -- |
 | `basename` | Removes the path prefix from a given pathname | Planned | -- |
 | `chroot` | Changes the root directory | Planned | -- |
@@ -87,7 +88,6 @@ This section tracks the implementation status of each utility in the Miau Utils 
 | `timeout` | Runs a command with a time limit | Planned | -- |
 | `true` | Does nothing but exit with success status | Planned | -- |
 | `tty` | Reports the terminal name | Planned | -- |
-| `uname` | Reports system information | Planned | -- |
 | `unlink` | Removes files via `unlink()` function | Planned | -- |
 | `uptime` | Reports how long the system has been running | Planned | -- |
 | `users` | Reports the user names of users currently logged into the current host | Planned | -- |

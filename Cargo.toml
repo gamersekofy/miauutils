@@ -1,5 +1,9 @@
 [workspace]
 resolver = "3"
+members = [
+    "miaulib",
+    "uname"
+]
 
 [workspace.package]
 authors = ["Uzair Mohammed <uzair.hamed@gmail.com>"]
@@ -7,3 +11,5 @@ repository = "https://github.com/gamersekofy/miauutils"
 
 [workspace.dependencies]
 clap = { version = "4.5.50", features = ["derive"] }
+platform-info = "2.0.5"
+libc = "0.2.177"
