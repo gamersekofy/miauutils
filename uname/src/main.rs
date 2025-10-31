@@ -66,16 +66,44 @@ fn main() {
 
     match get_platform_info() {
         Ok(info) => {
-            let output_parts = [
-                info.sys_name,
-                info.node_name,
-                info.release,
-                info.version,
-                info.machine,
-                info.os,
-            ];
+            let mut output_parts = Vec::new();
 
-            println!("{}", output_parts.join(" "));
+            if args.all {
+                // -p and -i are omitted to match GNU uname behavior
+                output_parts.push(info.sys_name);
+                output_parts.push(info.node_name);
+                output_parts.push(info.release);
+                output_parts.push(info.version);
+                output_parts.push(info.machine);
+                output_parts.push(info.os);
+            } else {
+                if args.kernel_name {
+                    output_parts.push(info.sys_name);
+                }
+                if args.nodename {
+                    output_parts.push(info.node_name);
+                }
+                if args.kernel_release {
+                    output_parts.push(info.release);
+                }
+                if args.kernel_version {
+                    output_parts.push(info.version);
+                }
+                if args.machine {
+                    output_parts.push(info.machine);
+                }
+                if args.processor {
+                    output_parts.push("unknown".to_string());
+                }
+                if args.hardware_platform {
+                    output_parts.push("unknown".to_string());
+                }
+                if args.operating_system {
+                    output_parts.push(info.os);
+                }
+            }
+
+            println!("{}", output_parts.join(" "))
         }
         Err(e) => {
             eprintln!("uname: error: {}", e);
