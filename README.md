@@ -51,7 +51,7 @@ This section tracks the implementation status of each utility in the Miau Utils 
 
 | Command | Description | Status | Notes |
 | :--- | :--- | :--- | :--- |
-| `uname` | Reports system information | In-progress | Linux implementation finished |
+| `uname` | Reports system information | In-progress | Linux/macOS implementation finished |
 | `arch` | Reports machine hardware name; same as `uname -m` | Planned | -- |
 | `basename` | Removes the path prefix from a given pathname | Planned | -- |
 | `chroot` | Changes the root directory | Planned | -- |

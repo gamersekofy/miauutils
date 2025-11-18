@@ -75,7 +75,9 @@ fn main() {
                 output_parts.push(info.release);
                 output_parts.push(info.version);
                 output_parts.push(info.machine);
-                output_parts.push(info.os);
+                if !cfg!(target_os = "macos") {
+                    output_parts.push(info.os);
+                }
             } else {
                 if args.kernel_name {
                     output_parts.push(info.sys_name);
