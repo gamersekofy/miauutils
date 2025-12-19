@@ -1,5 +1,5 @@
 use clap::Parser;
-use miaulib::get_platform_info;
+use miaulib::platform::get_platform_info;
 
 /// Print certain system information. With no OPTION, same as -s.
 #[derive(Parser, Debug)]
